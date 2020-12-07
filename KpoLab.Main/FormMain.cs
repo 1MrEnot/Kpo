@@ -1,14 +1,18 @@
 ﻿namespace KpoLab.Main
 {
     using Lib;
-    using Lib.Commands.Factory;
+    using Lib.Commands;
     using Lib.Common;
     using Lib.Utils;
     using System;
     using System.Windows.Forms;
 
     /// <summary>
-    /// 2 лаба - внедрение зависимостей
+    /// 3 лаба - внедрение зависимостей <br></br>
+    /// Установить <see cref="Castle.Windsor"/> через NuGet <br></br>
+    /// Создать статический класс <see cref="Ioc"/> для внедрения зависимостей <br></br>
+    /// Регестрировать в нём загрузчик <see cref="ILoader"/>, реализуемый либо <see cref="TestLoader"/> либо <see cref="SplitFileLoader"/>,
+    /// в зависимости от настроек в <see cref="GlobalAppSettings"/> <br></br>
     /// </summary>
     public partial class FormMain : Form
     {
@@ -29,8 +33,7 @@
         {
             try
             {
-                var commandFactory = GlobalAppSettings.CommandFactory;
-                var command = commandFactory.CreateLoader();
+                var command = Ioc.Container.Resolve<ILoader>();
                 command.Execute();
                 var systems = command.Systems;
                 
