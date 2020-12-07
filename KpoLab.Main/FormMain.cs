@@ -1,7 +1,6 @@
 ﻿namespace KpoLab.Main
 {
     using Lib;
-    using Lib.Commands;
     using Lib.Commands.Factory;
     using Lib.Common;
     using Lib.Utils;
@@ -10,9 +9,6 @@
 
     /// <summary>
     /// 2 лаба - абстрактная фабрика
-    /// Сделать объект <see cref="InformationSystem"/> <br></br>
-    /// Сделать статический объект для настроек <see cref="GlobalAppSettings"/> <br></br>
-    /// Сделать интерфейс для команды <see cref="ILoader"/>, команду-заглушку <see cref="TestLoader"/> и настоящую команду <see cref="SplitFileLoader"/> <br></br>
     /// Сделать абстрактную фабрику <see cref="IAbstractCommandFactory"/>, фабрику команд заглушек <see cref="TestCommandFactory"/> и настоящих команд <see cref="FileCommandFactory"/> <br></br>
     /// Сделать получение и использование фабрики <see cref="IAbstractCommandFactory"/> из настроек <see cref="GlobalAppSettings"/> <br></br>
     /// </summary>
