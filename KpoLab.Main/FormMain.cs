@@ -8,9 +8,7 @@
     using System.Windows.Forms;
 
     /// <summary>
-    /// 2 лаба - абстрактная фабрика
-    /// Сделать абстрактную фабрику <see cref="IAbstractCommandFactory"/>, фабрику команд заглушек <see cref="TestCommandFactory"/> и настоящих команд <see cref="FileCommandFactory"/> <br></br>
-    /// Сделать получение и использование фабрики <see cref="IAbstractCommandFactory"/> из настроек <see cref="GlobalAppSettings"/> <br></br>
+    /// 2 лаба - внедрение зависимостей
     /// </summary>
     public partial class FormMain : Form
     {
