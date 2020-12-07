@@ -2,17 +2,14 @@
 {
     using Lib;
     using Lib.Commands;
-    using Lib.Common;
     using Lib.Utils;
     using System;
     using System.Windows.Forms;
 
     /// <summary>
-    /// 3 лаба - внедрение зависимостей <br></br>
-    /// Установить <see cref="Castle.Windsor"/> через NuGet <br></br>
-    /// Создать статический класс <see cref="Ioc"/> для внедрения зависимостей <br></br>
-    /// Регестрировать в нём загрузчик <see cref="ILoader"/>, реализуемый либо <see cref="TestLoader"/> либо <see cref="SplitFileLoader"/>,
-    /// в зависимости от настроек в <see cref="GlobalAppSettings"/> <br></br>
+    /// 4 лаба - тесты <br></br>
+    /// Создать парсер <see cref="Parser"/> для превращения строк в объекты  <br></br>
+    /// Написать для него тесты <see cref="ParserTest"/><br></br>
     /// </summary>
     public partial class FormMain : Form
     {

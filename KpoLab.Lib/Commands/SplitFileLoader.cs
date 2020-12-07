@@ -34,21 +34,7 @@ namespace KpoLab.Lib.Commands
             {
                 var lines = File.ReadAllLines(filename);
                 Systems.Clear();
-
-                foreach (var line in lines)
-                {
-                    var arr = line.Split('|');
-                    var item = new InformationSystem
-                    {
-                        OperationSystem = arr[0],
-                        Database = arr[1],
-                        RamAmount = int.Parse(arr[2]),
-                        MemoryAmount = int.Parse(arr[3]),
-                        Cost = int.Parse(arr[4])
-                    };
-
-                    Systems.Add(item);
-                }
+                Systems.AddRange(Parser.Parse(lines, '|'));
                 Status = LoadStatus.Success;
             }
             catch (Exception e)
