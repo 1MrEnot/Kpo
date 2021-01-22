@@ -11,7 +11,8 @@
     /// 1 лаба - Настройка проекта
     /// Сделать объект <see cref="InformationSystem"/> <br></br>
     /// Сделать статический объект для настроек <see cref="GlobalAppSettings"/> <br></br>
-    /// Сделать интерфейс для команды <see cref="ILoader"/>, команду-заглушку <see cref="TestLoader"/> и настоящую команду <see cref="SplitFileLoader"/> <br></br>
+    /// Сделать интерфейс для команды <see cref="ILoader"/>,
+    /// команду-заглушку <see cref="TestLoader"/> и настоящую команду <see cref="SplitFileLoader"/>
     /// </summary>
     public partial class FormMain : Form
     {
