@@ -3,9 +3,11 @@ using System.IO;
 
 namespace KpoLab.Lib.Utils
 {
+    using Common;
+
     public static class Logger
     {
-        public static string Path = "Log.txt";
+        public static readonly string Path = GlobalAppSettings.LogPath;
         public const string Format = "[dd/MM/yyyy HH:mm]";
 
         public static void Log(string message)
