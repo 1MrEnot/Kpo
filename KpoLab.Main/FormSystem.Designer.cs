@@ -30,14 +30,14 @@
         {
             this.textBoxOs = new System.Windows.Forms.TextBox();
             this.labelOs = new System.Windows.Forms.Label();
-            this.textBoxPlace = new System.Windows.Forms.TextBox();
+            this.textBoxRam = new System.Windows.Forms.TextBox();
             this.labelRam = new System.Windows.Forms.Label();
             this.textBoxMemory = new System.Windows.Forms.TextBox();
             this.labelMemory = new System.Windows.Forms.Label();
             this.textBoxDatabase = new System.Windows.Forms.TextBox();
             this.labelDatabase = new System.Windows.Forms.Label();
             this.labelCost = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxCost = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // textBoxOs
@@ -57,13 +57,13 @@
             this.labelOs.TabIndex = 1;
             this.labelOs.Text = "ОС";
             // 
-            // textBoxPlace
+            // textBoxRam
             // 
-            this.textBoxPlace.Location = new System.Drawing.Point(109, 83);
-            this.textBoxPlace.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBoxPlace.Name = "textBoxPlace";
-            this.textBoxPlace.Size = new System.Drawing.Size(110, 23);
-            this.textBoxPlace.TabIndex = 0;
+            this.textBoxRam.Location = new System.Drawing.Point(109, 83);
+            this.textBoxRam.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxRam.Name = "textBoxRam";
+            this.textBoxRam.Size = new System.Drawing.Size(110, 23);
+            this.textBoxRam.TabIndex = 0;
             // 
             // labelRam
             // 
@@ -117,27 +117,27 @@
             this.labelCost.TabIndex = 2;
             this.labelCost.Text = "Цена";
             // 
-            // textBox1
+            // textBoxCost
             // 
-            this.textBox1.Location = new System.Drawing.Point(109, 108);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(110, 23);
-            this.textBox1.TabIndex = 3;
+            this.textBoxCost.Location = new System.Drawing.Point(109, 108);
+            this.textBoxCost.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxCost.Name = "textBoxCost";
+            this.textBoxCost.Size = new System.Drawing.Size(110, 23);
+            this.textBoxCost.TabIndex = 3;
             // 
             // FormSystem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(231, 141);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxCost);
             this.Controls.Add(this.labelCost);
             this.Controls.Add(this.labelDatabase);
             this.Controls.Add(this.textBoxDatabase);
             this.Controls.Add(this.labelMemory);
             this.Controls.Add(this.textBoxMemory);
             this.Controls.Add(this.labelRam);
-            this.Controls.Add(this.textBoxPlace);
+            this.Controls.Add(this.textBoxRam);
             this.Controls.Add(this.labelOs);
             this.Controls.Add(this.textBoxOs);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -152,13 +152,13 @@
 
         private System.Windows.Forms.TextBox textBoxOs;
         private System.Windows.Forms.Label labelOs;
-        private System.Windows.Forms.TextBox textBoxPlace;
+        private System.Windows.Forms.TextBox textBoxRam;
         private System.Windows.Forms.Label labelRam;
         private System.Windows.Forms.TextBox textBoxMemory;
         private System.Windows.Forms.Label labelMemory;
         private System.Windows.Forms.TextBox textBoxDatabase;
         private System.Windows.Forms.Label labelDatabase;
         private System.Windows.Forms.Label labelCost;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxCost;
     }
 }

@@ -16,7 +16,8 @@ namespace KpoLab.Main
                 textBoxOs.Text = _informationSystem.OperationSystem;
                 textBoxDatabase.Text = _informationSystem.Database;
                 textBoxMemory.Text = _informationSystem.MemoryAmount.ToString();
-                textBoxPlace.Text = _informationSystem.RamAmount.ToString();
+                textBoxRam.Text = _informationSystem.RamAmount.ToString();
+                textBoxCost.Text = _informationSystem.Cost.ToString();
             }
         }
 
