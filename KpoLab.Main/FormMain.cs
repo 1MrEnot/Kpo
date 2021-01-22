@@ -46,7 +46,7 @@
             }
         }
 
-        private void menuItemCreateAthlete_Click(object sender, EventArgs e)
+        private void menuItemCreate_Click(object sender, EventArgs e)
         {
             var formSystem = new FormSystem();
             var currentSystem = (InformationSystem)bindingSource.Current;

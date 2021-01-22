@@ -91,7 +91,7 @@ namespace KpoLab.Main
             this.menuItemCreateAthlete.Name = "menuItemCreateAthlete";
             this.menuItemCreateAthlete.Size = new System.Drawing.Size(117, 22);
             this.menuItemCreateAthlete.Text = "Создать";
-            this.menuItemCreateAthlete.Click += new System.EventHandler(this.menuItemCreateAthlete_Click);
+            this.menuItemCreateAthlete.Click += new System.EventHandler(this.menuItemCreate_Click);
             // 
             // statusStripMain
             // 
